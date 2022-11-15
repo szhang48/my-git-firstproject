@@ -1,0 +1,39 @@
+{
+    "bobas": [
+      {
+        "id": 1,
+        "name": "Taro Milk Tea",
+        "image": "",
+        "likes": 0,
+        "description": "Milk tea made from the root taro"
+      },
+      {
+        "id": 2,
+        "name": "Black Milk Tea",
+        "image": "",
+        "likes": 0,
+        "description": ""
+      },
+      {
+        "id": 3,
+        "name": "Thai Milk Tea",
+        "image": "",
+        "likes": 0,
+        "description": ""
+      },
+      {
+        "id": 4,
+        "name": "Matcha Milk Tea",
+        "image": "",
+        "likes": 0,
+        "description": ""
+      },
+      {
+        "id": 5,
+        "name": "Honeydew Milk Tea",
+        "image": "",
+        "likes": 0,
+        "description": ""
+      }
+    ]
+}
