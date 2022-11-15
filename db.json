@@ -3,35 +3,35 @@
       {
         "id": 1,
         "name": "Taro Milk Tea",
-        "image": "",
+        "image": "https://www.honestfoodtalks.com/wp-content/uploads/2021/02/taro-milk-tea-recipe.jpg",
         "likes": 0,
         "description": "Milk tea made from the root taro"
       },
       {
         "id": 2,
         "name": "Black Milk Tea",
-        "image": "",
+        "image": "https://bonteacafe.com/media/tiger_milk_tea.jpg",
         "likes": 0,
         "description": ""
       },
       {
         "id": 3,
         "name": "Thai Milk Tea",
-        "image": "",
+        "image": "https://content.jwplatform.com/thumbs/NXpZl0sj-720.jpg",
         "likes": 0,
         "description": ""
       },
       {
         "id": 4,
         "name": "Matcha Milk Tea",
-        "image": "",
+        "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/02/Matcha-milk-tea-recipe-with-ice-and-boba.jpg",
         "likes": 0,
         "description": ""
       },
       {
         "id": 5,
         "name": "Honeydew Milk Tea",
-        "image": "",
+        "image": "https://theflavorbells.com/wp-content/uploads/2022/07/honeydew_milk_tea_f.jpg",
         "likes": 0,
         "description": ""
       }
