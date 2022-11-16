@@ -6,10 +6,15 @@ fetch("http://localhost:3000/bobas")
 const bobaMenu = document.querySelector("#boba-menu")
 const button = document.querySelector("#add-likes")
 const like = document.querySelector('#likes-display')
+const detailImage = document.querySelector('.detail-image')
+const bobaName = document.querySelector('.name')
+const description = document.querySelector('.description')
 
 button.addEventListener("click", () =>{
-    const addLikes = parseInt(like.textContent.split(" ")[0])
+    const addLikes = parseInt(like.textContent) + 1
     like.textContent = addLikes
+
+    console.log(addLikes)
 })
 
 function renderbobas(bobas){
@@ -22,11 +27,8 @@ function renderboba(boba){
     bobaMenu.append(bobaImg)
     
     bobaImg.addEventListener('click', (e) => { 
-        console.log(boba.image)
-        const detailImage = document.querySelector('.detail-image')
-        const bobaName = document.querySelector('.name')
-        const description = document.querySelector('.description')
-        
+    console.log(boba.image)
+    
     detailImage.src = boba.image
     bobaName.textContent = boba.name 
     description.textContent = boba.description
