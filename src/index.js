@@ -4,6 +4,13 @@ fetch("http://localhost:3000/bobas")
 
 
 const bobaMenu = document.querySelector("#boba-menu")
+const button = document.querySelector("#add-likes")
+const like = document.querySelector('#likes-display')
+
+button.addEventListener("click", () =>{
+    const addLikes = parseInt(like.textContent.split(" ")[0])
+    like.textContent = addLikes
+})
 
 function renderbobas(bobas){
     bobas.forEach((boba) => renderboba(boba))
@@ -23,9 +30,28 @@ function renderboba(boba){
     detailImage.src = boba.image
     bobaName.textContent = boba.name 
     description.textContent = boba.description
-
-    const like = document.querySelectorAll('#likes-display')
     like.textContent = boba.likes
 
     }) 
 }
+
+function handleNewBoba() { 
+    const form  = document.querySelector('#new-boba')
+    form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const newBobaInput = {
+                name: e.target['name'].value,
+                description: e.target['description'].value,
+                image: e.target['image'].value,
+                likes: e.target['likes'].value,
+
+            }
+            renderboba(newBobaInput)
+            console.log(newBobaInput)
+            e.target.reset()
+
+
+
+    })
+}
+handleNewBoba()
