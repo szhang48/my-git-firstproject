@@ -9,12 +9,20 @@ const like = document.querySelector('#likes-display')
 const detailImage = document.querySelector('.detail-image')
 const bobaName = document.querySelector('.name')
 const description = document.querySelector('.description')
+const dislike = document.querySelector('#dislikes-display')
+const button2 = document.querySelector("#add-dislikes")
+
 
 button.addEventListener("click", () =>{
     const addLikes = parseInt(like.textContent) + 1
     like.textContent = addLikes
-
     console.log(addLikes)
+})
+button2.addEventListener('click', () => {
+    const addDislikes = parseInt(dislike.textContent) + 1
+    dislike.textContent = addDislikes
+    console.log(addDislikes)
+    
 })
 
 function renderbobas(bobas){
@@ -28,11 +36,12 @@ function renderboba(boba){
     
     bobaImg.addEventListener('click', (e) => { 
     console.log(boba.image)
-    
+
     detailImage.src = boba.image
     bobaName.textContent = boba.name 
     description.textContent = boba.description
     like.textContent = boba.likes
+    dislike.textContent = boba.dislikes
 
     }) 
 }
@@ -43,12 +52,14 @@ function handleNewBoba() {
             e.preventDefault()
             const newBobaInput = {
                 name: e.target['name'].value,
-                description: e.target['description'].value,
                 image: e.target['image'].value,
                 likes: e.target['likes'].value,
+                dislikes: e.target['dislikes'].value,
+                description: e.target['description'].value,
 
             }
             renderboba(newBobaInput)
+            handlePost(newBobaInput)
             console.log(newBobaInput)
             e.target.reset()
 
@@ -57,3 +68,53 @@ function handleNewBoba() {
     })
 }
 handleNewBoba()
+
+function handlePost(newBobaInput) {
+   
+    fetch("http://localhost:3000/bobas", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+
+        },
+        body: JSON.stringify(newBobaInput)
+    })
+    .then(res => renderbobas.json())
+    .then(obj => console.log(obj))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Toggle boba stores
+
+// function logItem(e) {
+//     const item = document.querySelector(`[data-id=${e.target.id}]`);
+//     item.toggleAttribute('hidden');
+//   }
+  
+//   const stores = document.querySelectorAll('details');
+//   stores.forEach((chapter) => {
+//     store.addEventListener('toggle', logItem);
+//   });

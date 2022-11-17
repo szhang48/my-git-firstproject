@@ -5,13 +5,13 @@
 <head>
     <meta charset='utf-8' />
     <title>Boba Liker</title>
-    <link rel="stylesheet" type="type/css" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script defer type="text/javascript" src="./src/index.js"></script>
 </head>
 
 <body>
     <header>
-        <h3>Best Boba </h3>
+        <h3>Best Boba Drink </h3>
     </header>
 
 
@@ -24,7 +24,7 @@
 
     <!-- Boba Description -->
     <div id="boba-details">
-        <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+        <img class="detail-image" src="https://static.onecms.io/wp-content/uploads/sites/44/2022/03/25/boba-tea-explainer.jpg" alt="BOBA GOES HERE" />
         <h2 class="name">Insert Name Here</h2>
         <h3 class="description">Insert Description Here</h3>
     </div>
@@ -32,9 +32,32 @@
     <h3>Likes:</h3>
     <p>
         <span id="likes-display"> 0 Add likes here</span>
+        <span id="dislikes-display">0 This is nasty</span>
     </p>
 
     <button id="add-likes"> Add more likes </button>
+    <button id ="add-dislikes"> Dislike </button>
+
+    <aside id="log">
+        <div data-id="str1" hidden>I</div>
+        <div data-id="str2" hidden>II</div>
+        <div data-id="str3" hidden>III</div>
+      </aside>
+      <section id="summaries">
+        <p>Popular Boba Stores</p>
+        <details id="str1">
+          <summary>GongCha</summary>
+          Founded in 2006 in Kaohsiung, Taiwan; Gong Cha, which translates to "tribute tea for the emperor" opened its doors to the bubble tea market.
+        </details>
+        <details id="str2">
+          <summary>CoCo</summary>
+          CoCo started from a humble place in Tamsui in 1997 to its current extensive footprints throughout Asia, South Pacific and North America.
+        </details>
+        <details id="str3">
+          <summary>Kung Fu Tea</summary>
+          In 2009, entrepreneurs Michael, Allen, and Ray were walking around Flushing, Queens after returning from a trip to Taiwan. They were in search of their favorite childhood drink: bubble tea. After looking around, they found a local tea spot, ordered, and sat down to discuss new business ideas.
+        </details>
+      </section>
 
     <form id="new-boba">
         <h4>Add New Boba</h4>
