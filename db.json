@@ -4,8 +4,8 @@
       "id": 1,
       "name": "Taro Milk Tea",
       "image": "https://www.honestfoodtalks.com/wp-content/uploads/2021/02/taro-milk-tea-recipe.jpg",
-      "likes": 5 ,
-      "dislikes": 0, 
+      "likes": 5,
+      "dislikes": 0,
       "description": "Milk tea made from the root taro"
     },
     {
@@ -13,32 +13,40 @@
       "name": "Black Milk Tea",
       "image": "https://bonteacafe.com/media/tiger_milk_tea.jpg",
       "likes": 0,
-      "dislikes": 0, 
+      "dislikes": 0,
       "description": "Black Tea with rich condensed milk and chewy boba balls"
     },
     {
       "id": 3,
-      "name": "Thai Milk Tea",
-      "image": "https://content.jwplatform.com/thumbs/NXpZl0sj-720.jpg",
-      "likes": 0,
-      "dislikes": 0, 
-      "description": "Traditional style tea with a unique orange color has a creamy and sweet taste made with milk and boba"
+      "name": "Cheese Foam Milk black Tea 芝士红玉奶茶",
+      "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/07/Coffee-boba-recipe-1.jpeg",
+      "likes": "3",
+      "dislikes": "0",
+      "description": "Fresh stawberry with milk and boba"
     },
     {
       "id": 4,
       "name": "Matcha Milk Tea",
       "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/02/Matcha-milk-tea-recipe-with-ice-and-boba.jpg",
       "likes": 0,
-      "dislikes": 0, 
+      "dislikes": 0,
       "description": "Using highly grade Japanese green tea powder made with milk and boba"
     },
     {
       "id": 5,
-      "name": "Honeydew Milk Tea",
-      "image": "https://theflavorbells.com/wp-content/uploads/2022/07/honeydew_milk_tea_f.jpg",
-      "likes": 0,
-      "dislikes": 0, 
-      "description": "Refreshing drink that has honeydew flavoring"
+      "name": "Taro Milk Tea",
+      "image": "https://www.honestfoodtalks.com/wp-content/uploads/2021/02/taro-milk-tea-recipe.jpg",
+      "likes": 5,
+      "dislikes": 0,
+      "description": "Milk tea made from the root taro"
+    },
+    {
+      "name": "Cheese Foam Milk black Tea 芝士红玉奶茶",
+      "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/07/Coffee-boba-recipe-1.jpeg",
+      "likes": "3",
+      "dislikes": "0",
+      "description": "Fresh stawberry with milk and boba",
+      "id": 6
     }
   ]
 }

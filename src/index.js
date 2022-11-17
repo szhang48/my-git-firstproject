@@ -43,6 +43,12 @@ function renderboba(boba){
     like.textContent = boba.likes
     dislike.textContent = boba.dislikes
 
+    // bobaImg.querySelector('#likes-display').addEventListener("click",() => {
+    //     boba.likes+=10
+    //     bobaImg.querySelector('span').textContent = boba.likes
+    // })
+    updateLikes(boba)
+
     }) 
 }
 
@@ -63,7 +69,7 @@ function handleNewBoba() {
             console.log(newBobaInput)
             e.target.reset()
 
-
+        
 
     })
 }
@@ -79,8 +85,21 @@ function handlePost(newBobaInput) {
         },
         body: JSON.stringify(newBobaInput)
     })
-    .then(res => renderbobas.json())
+    .then(res => res.json())
     .then(obj => console.log(obj))
+}
+function updateLikes(newBobaInput){
+    fetch (`http://localhost:3000/bobas/${newBobaInput.likes}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newBobaInput)
+    
+    })
+    .then(res => res.json())
+    .then(obj => console.log(obj))
+
 }
 
 
