@@ -36,7 +36,7 @@ likeButton.addEventListener("click", () =>{
     })
     .then(res => res.json())
     .then(obj => {
-        like.textContent = obj.likes
+        like.textContent = `${obj.likes} Likes`
     })
     
 })
@@ -61,7 +61,7 @@ dislikeButton.addEventListener('click', () => {
     })
     .then(res => res.json())
     .then(obj => {
-       dislike.textContent = obj.dislikes
+       dislike.textContent = `${obj.dislikes} Dislikes `
     })
     
 })
@@ -150,7 +150,10 @@ function handlePost(newBobaInput) {
         body: JSON.stringify(newBobaInput)
     })
     .then(res => res.json())
-    .then(obj => console.log(obj))
+    .then(obj => {
+        e.preventDefault()
+        console.log(obj)
+    })
 }
 
 

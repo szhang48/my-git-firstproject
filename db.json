@@ -20,16 +20,16 @@
       "id": 3,
       "name": "Thai Milk Tea",
       "image": "https://content.jwplatform.com/thumbs/NXpZl0sj-720.jpg",
-      "likes": 4,
-      "dislikes": 5,
+      "likes": 23,
+      "dislikes": 12,
       "description": "Traditional style tea with a unique orange color has a creamy and sweet taste made with milk and boba"
     },
     {
       "id": 4,
       "name": "Matcha Milk Tea",
       "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/02/Matcha-milk-tea-recipe-with-ice-and-boba.jpg",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 8,
+      "dislikes": 9,
       "description": "Using highly grade Japanese green tea powder made with milk and boba"
     },
     {
@@ -51,8 +51,8 @@
     {
       "name": "Butterfly Tea ",
       "image": "https://cdn.shopify.com/s/files/1/1921/3233/articles/SUNCORE_FOODS_BUTTERFLY_PEA_FLOWER_BOBA_MILK_TEA_800X800_17cfda11-3273-455d-9f8d-5798cd58cec8.jpg?v=1620684876",
-      "likes": 6,
-      "dislikes": 0,
+      "likes": 14,
+      "dislikes": 12,
       "description": "taste good ",
       "id": 8
     },
@@ -63,6 +63,22 @@
       "dislikes": 0,
       "description": "Fresh stawberry with milk and boba",
       "id": 9
+    },
+    {
+      "name": "Blue Tea",
+      "image": "https://images.squarespace-cdn.com/content/v1/58c81d2ae6f2e16d0cbf6c20/9e52c1b0-2543-4acb-9205-d1abbbd3bbda/Cotton+Candy+Smoothie.jpeg",
+      "likes": 6,
+      "dislikes": 7,
+      "description": "cute",
+      "id": 10
+    },
+    {
+      "name": "Tiger Sugar",
+      "image": "https://cdn.vox-cdn.com/thumbor/gRMZvxCnMw2IZT9UT9O1zNJh5ro=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19332431/tiger_sugar.jpg",
+      "likes": 15,
+      "dislikes": 10,
+      "description": "brown sugar milk ",
+      "id": 11
     }
   ]
 }
