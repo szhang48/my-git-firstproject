@@ -4,24 +4,24 @@
       "id": 1,
       "name": "Taro Milk Tea",
       "image": "https://www.honestfoodtalks.com/wp-content/uploads/2021/02/taro-milk-tea-recipe.jpg",
-      "likes": 5,
-      "dislikes": 0,
+      "likes": 15,
+      "dislikes": 18,
       "description": "Milk tea made from the root taro"
     },
     {
       "id": 2,
       "name": "Cheese Foam Milk black Tea 芝士红玉奶茶",
       "image": "https://www.honestfoodtalks.com/wp-content/uploads/2022/07/Coffee-boba-recipe-1.jpeg",
-      "likes": 2,
-      "dislikes": 3,
+      "likes": 6,
+      "dislikes": 5,
       "description": "Fresh stawberry with milk and boba"
     },
     {
       "id": 3,
       "name": "Thai Milk Tea",
       "image": "https://content.jwplatform.com/thumbs/NXpZl0sj-720.jpg",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 4,
+      "dislikes": 5,
       "description": "Traditional style tea with a unique orange color has a creamy and sweet taste made with milk and boba"
     },
     {
