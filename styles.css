@@ -1,41 +1,128 @@
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 1rem;
-    text-align: center;
-    background-color: skyblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  header {
-    padding: 0.5rem;
-    width: 100%;
-    color: white;
-    background-color: lightpink;
-  }
-  
-  #boba-menu  {
-    display: flex;
-    overflow-x: auto;
-    margin: 1rem 0;
-    max-width: calc(100vw - 2rem);
-  }
-  #boba-menu img { 
-    height: 300px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
-  }
-  .detail-image{
-    
-    height: 300px;
-  }
-  #log {
-    height: 100px;
-  }
+body {
+  padding: 1rem;
+  text-align: center;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  background-color: lightpink;
+}
+
+#boba-menu  {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0;
+  max-width: calc(100vw - 2rem);
+}
+#boba-menu img { 
+  height: 300px;
+
+}
+.detail-image{
   
+  height: 300px;
+}
+#log {
+  height: 100px;
+  
+}
+
+
+#summaries p:nth-of-type(1) {
+  font-size: 20px;
+  display: inline-flex;
+  height: 50px;
+  padding: 0px 24px;
+  background: pink;
+  border: none;
+  outline: white;
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: fantasy;
+  font-weight: 500;
+  align-items: center;
+  height: 100%;
+}
+
+h4 {
+  position: relative;
+  background: pink;
+  height: 10%;
+  text-align: center;
+  width: 100%;
+}
+
+#new-boba {
+  color: black;
+  background-color: white;
+}
+
+.likebutton {
+  display: inline-flex;
+  height: 50px;
+  padding: 0;
+  background: rgb(233, 7, 165);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  cursor: pointer;
+}
+  .likebutton:hover {
+    background: rgb(207, 8, 147);
+  }
+
+  .likebutton:active {
+    background:rgb(121, 3, 85);
+  }
+
+  .dislikebutton {
+  display: inline-flex;
+  height: 50px;
+  padding: 0;
+  background: rgb(66, 94, 253);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  cursor: pointer;
+}
+  .dislikebutton:hover {
+    background: rgb(47, 68, 255);
+  }
+
+  .dislikebutton:active {
+    background:rgb(26, 7, 197);
+  }
+
+  .button__text, .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+  }
+
+  .button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }

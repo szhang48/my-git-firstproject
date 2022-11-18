@@ -35,8 +35,18 @@
         <span id="dislikes-display">0 This is nasty</span>
     </p>
 
-    <button id="add-likes"> Add more likes </button>
-    <button id ="add-dislikes"> Dislike </button>
+    <button id="add-likes" class="likebutton">
+      <span class="button__text">Like!</span>
+      <span class="button__icon">
+        <ion-icon name="heart-outline"></ion-icon>
+      </span>
+    </button>
+    <button id="add-dislikes" class="dislikebutton">
+      <span class="button__text">Dislike!</span>
+      <span class="button__icon">
+        <ion-icon name="sad-outline"></ion-icon>
+      </span>
+    </button>
 
     <aside id="log">
         <div data-id="str1" hidden>I</div>
@@ -74,7 +84,8 @@
         <input type="submit" value="Create" />
       </form>
 
-
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
         
 </body>

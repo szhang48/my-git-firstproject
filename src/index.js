@@ -1,3 +1,5 @@
+
+
 fetch("http://localhost:3000/bobas")
 .then(res => res.json())
 .then(obj => renderbobas(obj))
@@ -14,16 +16,42 @@ const button2 = document.querySelector("#add-dislikes")
 
 
 button.addEventListener("click", () =>{
-    const addLikes = parseInt(like.textContent) + 1
-    like.textContent = addLikes
+    const addLikes = parseInt(like.textContent) 
+    like.textContent = `${addLikes + 1 } Likes`
     console.log(addLikes)
+
+    fetch = (`http://localhost:3000/bobas/${id.likes}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(addLikes)
+
+        .then(res => res.json())
+        .then(addLikes => console.log(addLikes))
+    })
 })
 button2.addEventListener('click', () => {
-    const addDislikes = parseInt(dislike.textContent) + 1
-    dislike.textContent = addDislikes
+    const addDislikes = parseInt(dislike.textContent) 
+    dislike.textContent = `${addDislikes + 1 } Dislikes`
     console.log(addDislikes)
     
 })
+
+
+button.addEventListener('mouseover', (e) => {
+    e.target.style.color = "black";
+    setTimeout(() => {
+        e.target.style.color = '';
+    }, 500)
+}, false);
+
+button2.addEventListener('mouseover', (e) => {
+    e.target.style.color = "black";
+    setTimeout(() => {
+        e.target.style.color = '';
+    }, 500)
+}, false);
 
 function renderbobas(bobas){
     bobas.forEach((boba) => renderboba(boba))
@@ -35,32 +63,34 @@ function renderboba(boba){
     bobaMenu.append(bobaImg)
     
     bobaImg.addEventListener('click', (e) => { 
-    console.log(boba.image)
-
-    detailImage.src = boba.image
-    bobaName.textContent = boba.name 
-    description.textContent = boba.description
-    like.textContent = boba.likes
-    dislike.textContent = boba.dislikes
-
-    // bobaImg.querySelector('#likes-display').addEventListener("click",() => {
-    //     boba.likes+=10
-    //     bobaImg.querySelector('span').textContent = boba.likes
-    // })
-    updateLikes(boba)
-
+        currentBoba = boba
+        console.log(boba.image)
+        
+        detailImage.src = boba.image
+        bobaName.textContent = boba.name 
+        description.textContent = boba.description
+        like.textContent = boba.likes
+        dislike.textContent = boba.dislikes
+        
+        // bobaImg.querySelector('#likes-display').addEventListener("click",() => {
+            //     boba.likes+=10
+            //     bobaImg.querySelector('span').textContent = boba.likes
+            // })
+            
+    
     }) 
 }
 
 function handleNewBoba() { 
     const form  = document.querySelector('#new-boba')
     form.addEventListener('submit', (e) => {
+        
             e.preventDefault()
             const newBobaInput = {
                 name: e.target['name'].value,
                 image: e.target['image'].value,
-                likes: e.target['likes'].value,
-                dislikes: e.target['dislikes'].value,
+                likes: parseInt(e.target['likes'].value),
+                dislikes: parseInt(e.target['dislikes'].value),
                 description: e.target['description'].value,
 
             }
@@ -88,41 +118,20 @@ function handlePost(newBobaInput) {
     .then(res => res.json())
     .then(obj => console.log(obj))
 }
-function updateLikes(newBobaInput){
-    fetch (`http://localhost:3000/bobas/${newBobaInput.likes}`, {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newBobaInput)
+// function updateLikes(newBobaInput) {
+//     console.log(newBobaInput.id)
+//     fetch (`http://localhost:3000/bobas/${newBobaInput.id}`, {
+//         method: 'PATCH',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(newBobaInput)
     
-    })
-    .then(res => res.json())
-    .then(obj => console.log(obj))
+//     })
+//     .then(res => res.json())
+//     .then(obj => console.log(obj))
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// }
 
 
 
